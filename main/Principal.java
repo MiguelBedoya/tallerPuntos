@@ -14,6 +14,18 @@ public class Principal {
         P3 sextoPunto = new P3(segundoPunto, 2);
         P3 septimoPunto = new P3(quintoPunto);
 
+        P4 octavoPunto = new P4();
+        P4 novenoPunto = new P4(4,5,6,7);
+        P4 decimoPunto = new P4(quintoPunto, 6);
+        P4 onceavoPunto = new P4 (decimoPunto);
+
+        System.out.println("Figura 4D");
+        System.out.println(octavoPunto);
+        System.out.println(novenoPunto);
+        System.out.println(decimoPunto);
+        System.out.println(onceavoPunto);
+        System.out.println(octavoPunto.calcularDistancia(decimoPunto));
+
         Triangulo equilatero = new Triangulo();
         equilatero.setPunto1(punto2);
         equilatero.setPunto2(segundoPunto);
@@ -26,18 +38,17 @@ public class Principal {
         cubito.getVertices()[3] = quintoPunto;
         cubito.setVertices(cubito.getVertices());
 
-        P3 [] a = cubito.getVertices();
-        for(P3 p:a){
-        System.out.println(p);
-
-        }
-        /*
+        System.out.println("Figura 3D");
         System.out.println(cuartoPunto);
         System.out.println(quintoPunto);
         System.out.println(sextoPunto);
         System.out.println(septimoPunto);
+        /*P3 [] a = cubito.getVertices();
+        for(P3 p:a){
+        System.out.println(p);
         */
 
-        P2 pruebaLiskov = new P3();
+        //P2 pruebaLiskov = new P3();
+
     }
 }

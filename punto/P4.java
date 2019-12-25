@@ -7,7 +7,7 @@ public class P4 extends P3 {
 
     //Constructores
 
-    public P4(int x, int y, int z){
+    public P4(){
         super();
         this.w = 0;
     }
